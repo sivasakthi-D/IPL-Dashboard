@@ -1,15 +1,19 @@
 import {Link} from 'react-router-dom'
 import './index.css'
 
-const TeamCard = ({teamName, teamImage, teamId}) => {
+const TeamCard = props => {
+  const {teamDetails} = props
+  const {name, id, teamImageURL} = teamDetails
+
   return (
-    <Link to={`/team/${teamId}`} className="team-card-link">
-      <div className="team-card">
-        <img src={teamImage} alt={teamName} className="team-logo" />
-        <h3>{teamName}</h3>
-      </div>
-    </Link>
+    <li className="team-item">
+      <Link to={`/team/${id}`} className="link-item">
+        <img src={teamImageURL} alt={`${name} logo`} className="team-logo" />
+        <p className="team-name">{name}</p>
+      </Link>
+    </li>
   )
 }
 
 export default TeamCard
+
