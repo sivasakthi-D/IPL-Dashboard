@@ -1,9 +1,9 @@
-import {Link} from 'react-router-dom'
-import './index.css'
+import { Link } from "react-router-dom";
+import "./index.css";
 
-const TeamCard = props => {
-  const {teamDetails} = props
-  const {name, id, teamImageURL} = teamDetails
+const TeamCard = (props) => {
+  const { teamDetails } = props;
+  const { name, id, teamImageURL } = teamDetails;
 
   return (
     <li className="team-item">
@@ -12,8 +12,7 @@ const TeamCard = props => {
         <p className="team-name">{name}</p>
       </Link>
     </li>
-  )
-}
+  );
+};
 
-export default TeamCard
-
+export default TeamCard;
