@@ -2,6 +2,7 @@
   "name": "debugging-ipl-dashboard",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://sivasakthi-D.github.io/IPL-Dashboard",
   "engines": {
     "node": "^10.13 || 12 || 14 || 15",
     "npm": ">=6"
